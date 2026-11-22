@@ -1,29 +1,73 @@
-# Python
+
+# ==============================
+# PYTHON ENVIRONMENT
+# ==============================
+venv/
+.venv/
+env/
+ENV/
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environments
-venv/
-.venv/
-env/
-
-# Environment variables
+# ==============================
+# ENVIRONMENT VARIABLES & SECRETS
+# ==============================
 .env
 .env.*
+!.env.example
+!.env.template
+secrets/
+secrets.json
+credentials.json
+service-account*.json
+*secret*
+*credentials*
 
-# IDE
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==============================
+# CACHE & TEMPORARY FILES
+# ==============================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.log
+temp/
+tmp/
+
+# ==============================
+# IDE & EDITORS
+# ==============================
 .vscode/
 .idea/
 
-# Cache and logs
-.pytest_cache/
-.mypy_cache/
-*.log
-
-# OS files
+# ==============================
+# SYSTEM FILES
+# ==============================
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Generated files
+# ==============================
+# DATABASE & LOCAL DATA
+# ==============================
 *.sqlite3
+*.db-journal
+
+# ==============================
+# NODE MODULES (IF USED)
+# ==============================
+node_modules/
+
+# ==============================
+# BUILD FILES
+# ==============================
+build/
+dist/
+*.egg-info/
